@@ -8,7 +8,7 @@ markdown Static Document System | markdown 静态文档系统
 [下载安装node LTS版本](https://nodejs.org/)  
 安装 transliteration
 ```
-npm install transliteration -g
+npm install
 ```
     
 **1. 下载项目**  
