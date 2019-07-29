@@ -6,7 +6,11 @@ markdown Static Document System | markdown 静态文档系统
 ## 使用方法  
 **0. 依赖安装（如已安装请跳过）**  
 [下载安装node LTS版本](https://nodejs.org/)  
-  
+安装 transliteration
+```
+npm install transliteration -g
+```
+    
 **1. 下载项目**  
 ```shell
 $ git clone https://github.com/coloz/mdSDS.git

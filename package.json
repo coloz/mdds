@@ -1,0 +1,28 @@
+{
+  "name": "mdsds",
+  "version": "1.0.0",
+  "description": "markdown Static Document System | markdown 静态文档系统",
+  "main": " ",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coloz/mdSDS.git"
+  },
+  "keywords": [
+    "mdsds"
+  ],
+  "author": "lvzhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coloz/mdSDS/issues"
+  },
+  "homepage": "https://github.com/coloz/mdSDS#readme",
+  "dependencies": {
+    "transliteration": "^2.1.4"
+  }
+}
