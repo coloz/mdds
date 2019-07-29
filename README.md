@@ -4,25 +4,25 @@ markdown Static Document System | markdown 静态文档系统
 [Demo](https://doc.clz.me/)  
 
 ## 使用方法  
-0. 依赖安装（如已安装请跳过）  
+**0. 依赖安装（如已安装请跳过）**  
 [下载安装node LTS版本](https://nodejs.org/)  
   
-1. 下载项目  
+**1. 下载项目**  
 ```shell
 $ git clone https://github.com/coloz/mdSDS.git
 ```
   
-2. 将markdown文档放置在docs目录中  
+**2. 将markdown文档放置在docs目录中**  
 推荐以 <数字标号>-<文件名>的方式命名文档和文件夹  
 这样创建出的目录，将以<数字标号>进行排序    
   
-3. 运行目录创建脚本  
+**3. 运行目录创建脚本**  
 ```shell
 $ cd mdSDS
 $ node process.js
 ```
   
-4. 将项目部署到服务器或pages服务  
+**4. 将项目部署到服务器或pages服务**  
 
 
 ## 目录创建  
