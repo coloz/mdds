@@ -2,6 +2,8 @@
 markdown Static Document System | markdown 静态文档系统  
 
 [Demo](https://doc.clz.me/)  
+[Demo2](https://blinker.app/doc)  
+
 
 ## 使用方法  
 **0. 依赖安装（如已安装请跳过）**  
