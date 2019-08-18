@@ -1,15 +1,5 @@
 # blinker PRO Arduino支持库
 针对嵌入式设备的blinker库，需配合arduino sdk使用。 
-
->1. [支持的硬件](#支持的硬件 "支持的硬件")
->1. [支持的接入方式](#支持的接入方式 "支持的接入方式")
->1. [准备工作](#准备工作 "准备工作")
->1. [Blinker PRO 接口函数](#Blinker PRO 接口函数 "Blinker PRO 接口函数")  
->    1. [设备配置](#设备配置 "设备配置")
->    1. [BLINKER_BUTTON](#BLINKER_BUTTON "BLINKER_BUTTON")
->    1. [BLINKER_NO_BUTTON](#BLINKER_NO_BUTTON "BLINKER_NO_BUTTON")
->    1. [数据解析](#数据管理 "数据解析")
->1. [感谢](#感谢 "感谢")  
   
 ## 支持的硬件
 * 使用 [esp8266/arduino](https://github.com/esp8266/arduino) 的ESP8266  
@@ -86,14 +76,14 @@ void setup() {
  * 
  * When button clicked, device will call this function
  */
-void singalClick()
+void singleClick()
 {
     BLINKER_LOG("Button clicked!");
 }
 ```
 注册按键单次按下时的回调函数, 当设备检测到按键单击时将调用该函数
 ```cpp
-Blinker.attachClick(singalClick);
+Blinker.attachClick(singleClick);
 ```  
 
 #### Blinker.attachDoubleClick()
@@ -111,7 +101,7 @@ void doubleClick()
 ```
 注册按键双击时的回调函数, 当设备检测到按键双击时将调用该函数
 ```cpp
-Blinker.attachDoubleClick(singalClick);
+Blinker.attachDoubleClick(singleClick);
 ```
 
 #### Blinker.attachLongPressStart()
@@ -233,7 +223,7 @@ uint16_t pressed_time = Blinker.pressedTime();
 /* 
  * Blinker provide a button parse function for user if you defined BLINKER_BUTTON
  * 
- * Blinker button can detect singal click/ double click/ long press
+ * Blinker button can detect single click/ double click/ long press
  * 
  * Blinker.tick() will run by default, use interrupt will be better
  */
@@ -266,6 +256,9 @@ void noButtonReset()
 ```cpp
 Blinker.attachNoButtonReset(noButtonReset);
 ```
+
+#### Blinker.reset()
+设备重置API, 调用该接口后设备将立即重置。  
 
 ### 数据解析
 设备在收到数据时将调用数据解析的回调函数。  
