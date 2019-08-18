@@ -7,7 +7,10 @@
 
 [build]
   base    = ""
-  command = "node process.js"
+  command = "
+  npm install
+  node process.js
+  "
   publish = ""
 
 # Production context: All deploys from the main
