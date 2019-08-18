@@ -107,8 +107,6 @@ try_files $uri $uri/ /index.html;
   </rewrite>
 </system.webServer>
 ```  
-### Github Pages服务  
-直接部署即可  
 
 ## 灵感来自amwiki
 对比[amwiki](https://github.com/TevinLi/amWiki)，主要做了两点优化：  
